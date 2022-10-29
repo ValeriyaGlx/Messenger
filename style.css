@@ -6,6 +6,12 @@
     src: url("fonts/Muller.woff") format("woff");
   }
   
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }  
+
   html,
   body {
     height: 100%;
@@ -42,7 +48,7 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    margin: 0 35% 0;
+    margin: 0 20%;
   }
   
   .chat-content {
@@ -212,3 +218,34 @@
     box-shadow: none;
   }
   
+  @media screen and (max-width: 780px) {
+    
+
+    .chat-form-input, .chat-form-button {
+      width: 100px;
+      border-radius: 50px;
+      font: inherit;
+    }
+    .chat-form-button {
+      width: 64px;
+  }
+  .chat-form-button span{
+    display: none;
+  }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .chat-form-input {
+      margin-right: 0;
+      width: 200px;
+      margin-bottom: 10px;
+  }
+    .chat-form {
+      
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+  }
+
