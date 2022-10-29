@@ -219,7 +219,11 @@
   }
   
   @media screen and (max-width: 780px) {
+
+    .chat {
     
+      margin: 0;
+    }
 
     .chat-form-input, .chat-form-button {
       width: 100px;
@@ -233,7 +237,6 @@
     display: none;
   }
   }
-  
   @media screen and (max-width: 400px) {
     .chat-form-input {
       margin-right: 0;
